@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan J. Lois Ortiz | Portfolio</title>
+    <meta name="description" content="Interactive portfolio of Jonathan J. Lois Ortiz — CS student, software engineer, and ML enthusiast." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="top-nav">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand">JL</a>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="home" class="hero">
+        <div class="hero-blobs" aria-hidden="true">
+          <span class="blob blob-green"></span>
+          <span class="blob blob-mocha"></span>
+          <span class="blob blob-accent"></span>
+        </div>
+        <div class="container hero-inner">
+          <p class="eyebrow reveal-up">Computer Science &bull; UPR Río Piedras</p>
+          <h1 class="reveal-up delay-1">
+            Building software that<br />
+            <span class="typed-wrap">
+              <span id="typed-text" class="typed"></span><span class="cursor" aria-hidden="true">|</span>
+            </span>
+          </h1>
+          <p class="lead reveal-up delay-2">
+            I'm <strong>Jonathan J. Lois Ortiz</strong> — a junior CS student obsessed with clean systems,
+            machine learning, and products that actually help people.
+          </p>
+          <div class="hero-actions reveal-up delay-3">
+            <a class="btn btn-primary" href="mailto:jonathan.lois@upr.edu">Get in touch</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/jonathan-josé-l-4282852b7" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="#experience">See my work</a>
+          </div>
+          <div class="stat-cards reveal-up delay-4" aria-label="Impact highlights">
+            <div class="stat-card">
+              <span class="stat-num" data-target="80">0</span><span class="stat-unit">+</span>
+              <p>Students tutored</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="95">0</span><span class="stat-unit">%</span>
+              <p>Model accuracy</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="40">0</span><span class="stat-unit">%</span>
+              <p>Cloud call reduction</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="3">0</span><span class="stat-unit">+</span>
+              <p>Active roles</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <h2 class="section-title reveal-up">About Me</h2>
+        <div class="about-layout">
+          <div class="about-text reveal-up">
+            <p>
+              I'm a junior Computer Science student passionate about <strong>Machine Learning</strong> and
+              <strong>Software Engineering</strong>. I love tackling problems that blend data, design, and real-world
+              impact — whether that's predicting game outcomes, redesigning a university platform, or optimizing cloud infrastructure.
+            </p>
+            <p>
+              I'm currently seeking <strong>internships and research opportunities</strong> where I can apply
+              my technical skills and keep growing alongside experienced teams.
+            </p>
+          </div>
+          <div class="info-cards reveal-up delay-1">
+            <div class="info-card">
+              <span class="info-icon">&#127891;</span>
+              <div>
+                <p class="info-label">Education</p>
+                <p class="info-value">B.S. Computer Science, UPR RP</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">&#128205;</span>
+              <div>
+                <p class="info-label">Location</p>
+                <p class="info-value">San Juan, Puerto Rico</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">&#128301;</span>
+              <div>
+                <p class="info-label">Focus</p>
+                <p class="info-value">ML &bull; Full-Stack &bull; Cloud</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">&#9993;</span>
+              <div>
+                <p class="info-label">Email</p>
+                <p class="info-value"><a href="mailto:jonathan.lois@upr.edu">jonathan.lois@upr.edu</a></p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">&#128101;</span>
+              <div>
+                <p class="info-label">LinkedIn</p>
+                <p class="info-value"><a href="https://www.linkedin.com/in/jonathan-josé-l-4282852b7" target="_blank" rel="noopener noreferrer">jonathan-josé-l</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section container">
+        <h2 class="section-title reveal-up">Education</h2>
+        <div class="edu-card reveal-up">
+          <div class="edu-icon">&#127891;</div>
+          <div class="edu-body">
+            <h3>B.S. in Computer Science</h3>
+            <p class="meta">University of Puerto Rico, Río Piedras &nbsp;&middot;&nbsp; Aug 2023 – May 2027</p>
+            <p class="edu-minor">Minor: Information Systems &amp; Business Intelligence</p>
+            <div class="edu-row">
+              <div>
+                <p class="edu-label">Major GPA</p>
+                <p class="edu-value">3.7</p>
+              </div>
+              <div>
+                <p class="edu-label">Organizations</p>
+                <p class="edu-value">AECC</p>
+              </div>
+            </div>
+            <div class="tag-cloud edu-courses">
+              <span class="tag">Data Structures</span>
+              <span class="tag">Databases</span>
+              <span class="tag">Artificial Intelligence</span>
+              <span class="tag">Cybersecurity</span>
+              <span class="tag">Big Data</span>
+              <span class="tag">Business Intelligence</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Statistics</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section container">
+        <h2 class="section-title reveal-up">Experience</h2>
+        <div class="timeline">
+
+          <article class="role-card reveal-up">
+            <div class="role-header" role="button" tabindex="0" aria-expanded="true">
+              <div class="role-dot dot-green"></div>
+              <div class="role-header-text">
+                <h3>Project Lead Software Engineer</h3>
+                <p class="meta">Oct 2025 – Present &nbsp;&middot;&nbsp; CRiiAS Título V, UPR</p>
+              </div>
+              <div class="role-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <span class="role-arrow" aria-hidden="true">&#8595;</span>
+            </div>
+            <div class="role-body open">
+              <ul>
+                
+                <li>Currently developing a full-stack application using <strong>React + TypeScript</strong> on the frontend and <strong>Django REST Framework + PostgreSQL</strong> on the backend, replacing a legacy static site with a fully dynamic platform.</li>
+                <li>Implemented <strong>Google OAuth 2.0</strong> via Django Allauth, enabling secure single-sign-on for students and staff using their institutional UPR Google accounts — eliminating password management entirely.</li>
+                <li>Built an <strong>in-person attendance tracking system</strong> allowing students to log check-ins in real time, replacing Jotform-based check-ins with a structured digital record linked to each student's profile.</li>
+                <li>Will build an <strong>admin analytics dashboard</strong> surfacing registration trends, session occupancy, and student activity — giving program coordinators real-time data visibility for the first time.</li>
+              </ul>
+              <p class="role-disclaimer">
+                🔗 Live site link will be published once the platform is deployed to production.
+              </p>
+              <div class="before-after" aria-label="CRiiAS redesign — before and after">
+                <figure>
+                  <img src="Screenshot%202026-02-17%20at%207.19.08%E2%80%AFPM.png" alt="CRiiAS site before redesign" loading="lazy" />
+                  <figcaption>Before</figcaption>
+                </figure>
+                <figure>
+                  <img src="Screenshot%202026-02-17%20at%207.19.25%E2%80%AFPM.png" alt="CRiiAS site after redesign" loading="lazy" />
+                  <figcaption>After</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="role-card reveal-up delay-1">
+            <div class="role-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="role-dot dot-mocha"></div>
+              <div class="role-header-text">
+                <h3>Academic Tutor — CS &amp; Mathematics</h3>
+                <p class="meta">Jan 2025 – Present &nbsp;&middot;&nbsp; CRiiAS Título V, UPR</p>
+              </div>
+              <div class="role-tags">
+                <span class="tag">Teaching</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">Calculus</span>
+              </div>
+              <span class="role-arrow" aria-hidden="true">&#8595;</span>
+            </div>
+            <div class="role-body">
+              <ul>
+                <li>Delivered <strong>one-on-one and group tutoring sessions</strong> for courses spanning Data Structures, Calculus I and Discrete Mathematics.</li>
+                <li>Supported over <strong>80 students in a single semester</strong>, consistently receiving high satisfaction ratings from program coordinators and students alike.</li>
+                <li>Developed <strong>original practice problem sets, exam guides, and concept summaries</strong> tailored to common student pain points identified through session feedback.</li>
+                <li>Coordinated with faculty to <strong>align tutoring content with course syllabi</strong>, ensuring students received targeted, exam-relevant support at the right time.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role-card reveal-up delay-2">
+            <div class="role-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="role-dot dot-green"></div>
+              <div class="role-header-text">
+                <h3>Software Engineer Intern</h3>
+                <p class="meta">Jun 2025 – Aug 2025 &nbsp;&middot;&nbsp; Roadeo, San Juan</p>
+              </div>
+              <div class="role-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Google Cloud</span>
+              </div>
+              <span class="role-arrow" aria-hidden="true">&#8595;</span>
+            </div>
+            <div class="role-body">
+              <ul>
+                <li>Contributed to a <strong>production Flutter mobile app</strong> used by active customers, implementing UI features, fixing bugs, and shipping code through a structured review and QA pipeline.</li>
+                <li>Integrated <strong>third-party messaging APIs and internal REST endpoints</strong> to build real-time communication workflows between drivers and dispatchers within the app.</li>
+                <li>Identified a critical inefficiency in cloud function invocation patterns and <strong>reduced daily Google Cloud function calls by 40%</strong> through caching strategies and request batching — directly lowering infrastructure costs.</li>
+                <li>Worked with <strong>Firebase Firestore and Firebase Auth</strong> to manage real-time data sync and user session state across the mobile client.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role-card reveal-up delay-3">
+            <div class="role-header" role="button" tabindex="0" aria-expanded="false">
+              <div class="role-dot dot-mocha"></div>
+              <div class="role-header-text">
+                <h3>Research Assistant — Atmospheric &amp; Aerosol Lab</h3>
+                <p class="meta">Mar 2025 – Jun 2025 &nbsp;&middot;&nbsp; ACAR Lab, UPR</p>
+              </div>
+              <div class="role-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Matplotlib</span>
+              </div>
+              <span class="role-arrow" aria-hidden="true">&#8595;</span>
+            </div>
+            <div class="role-body">
+              <ul>
+                <li>Processed and analyzed large-scale <strong>Aerosol Optical Depth (AOD) and PM10 particulate datasets</strong> sourced from remote sensing instruments and ground-level monitoring stations across Puerto Rico.</li>
+                <li>Used <strong>Pandas and NumPy</strong> to clean, merge, and transform raw sensor data into structured formats suitable for statistical analysis and publication-ready figures.</li>
+                <li>Wrote <strong>automated Python scripts</strong> to scrape external data sources, perform format conversions (NetCDF, CSV, Excel), and organize output files for reproducible research pipelines.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2 class="section-title reveal-up">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card reveal-up">
+            <div class="project-accent accent-green"></div>
+            <div class="project-body">
+              <h3>NBA Win % Prediction Model</h3>
+              <p>
+                A Random Forest regression model trained on per-team season stats to predict win percentage
+                with high statistical confidence.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-badge badge-green">95% R² accuracy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal-up delay-1">
+            <div class="project-accent accent-mocha"></div>
+            <div class="project-body">
+              <h3>Cloud Multiplayer Server</h3>
+              <p>
+                Deployed and self-managed a Java game server on Oracle Cloud Infrastructure — including
+                VCN setup, security policy hardening, and upgrades.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Oracle Cloud</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Networking</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-badge badge-mocha">Java 17 → 21 upgrade</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="skills" class="section container">
+        <h2 class="section-title reveal-up">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal-up">
+            <h3 class="skill-group-title">Languages</h3>
+            <div class="tag-cloud">
+              <span class="tag tag-lg">Python</span>
+              <span class="tag tag-lg">Java</span>
+              <span class="tag tag-lg">JavaScript</span>
+              <span class="tag tag-lg">TypeScript</span>
+              <span class="tag tag-lg">SQL</span>
+              <span class="tag tag-lg">Dart</span>
+              <span class="tag tag-lg">C</span>
+            </div>
+          </div>
+          <div class="skill-group reveal-up delay-1">
+            <h3 class="skill-group-title">Frameworks &amp; Tools</h3>
+            <div class="tag-cloud">
+              <span class="tag tag-lg">React</span>
+              <span class="tag tag-lg">Django</span>
+              <span class="tag tag-lg">Flutter</span>
+              <span class="tag tag-lg">Firebase</span>
+              <span class="tag tag-lg">PostgreSQL</span>
+              <span class="tag tag-lg">Git</span>
+              <span class="tag tag-lg">Linux</span>
+            </div>
+          </div>
+          <div class="skill-group reveal-up delay-2">
+            <h3 class="skill-group-title">Machine Learning</h3>
+            <div class="tag-cloud">
+              <span class="tag tag-lg">Scikit-learn</span>
+              <span class="tag tag-lg">Pandas</span>
+              <span class="tag tag-lg">NumPy</span>
+              <span class="tag tag-lg">Matplotlib</span>
+              <span class="tag tag-lg">Random Forests</span>
+              <span class="tag tag-lg">Feature Eng.</span>
+            </div>
+          </div>
+          <div class="skill-group reveal-up delay-3">
+            <h3 class="skill-group-title">Cloud &amp; Infrastructure</h3>
+            <div class="tag-cloud">
+              <span class="tag tag-lg">Google Cloud</span>
+              <span class="tag tag-lg">Oracle Cloud</span>
+              <span class="tag tag-lg">Ubuntu</span>
+              <span class="tag tag-lg">VCN / Networking</span>
+              <span class="tag tag-lg">REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="contact-box reveal-up">
+          <p class="contact-eyebrow">Let's work together</p>
+          <h2>Open to new opportunities</h2>
+          <p class="contact-sub">
+            I'm looking for internships, software engineering roles, and ML research collaborations.
+            Don't hesitate to reach out.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:jonathan.lois@upr.edu">jonathan.lois@upr.edu</a>
+            <a class="btn btn-ghost" href="tel:+17874637874">+1 (787) 463-7874</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/jonathan-josé-l-4282852b7" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>&#169; <span id="year"></span> Jonathan J. Lois Ortiz</p>
+        <p class="footer-sub">Built with HTML, CSS &amp; JavaScript</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
