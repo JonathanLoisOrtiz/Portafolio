@@ -5,6 +5,27 @@
 /* ---------- Year stamp ---------- */
 document.getElementById('year').textContent = new Date().getFullYear();
 
+/* ---------- Mobile nav hamburger ---------- */
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu   = document.querySelector('nav');
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Close menu when a nav link is clicked
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
 /* ---------- Scroll progress bar ---------- */
 const bar = document.getElementById('scroll-progress');
 function updateProgress() {
