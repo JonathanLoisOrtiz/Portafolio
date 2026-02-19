@@ -1009,13 +1009,15 @@ h1 {
 }
 
 [lang="es"] .btn-primary {
-  background: var(--green);
-  box-shadow: 0 4px 20px rgba(37,99,235,.3);
+  background: #fff;
+  color: var(--blue);
+  box-shadow: 0 4px 20px rgba(37,99,235,.2);
 }
 
 [lang="es"] .btn-primary:hover {
-  background: var(--green-mid);
-  box-shadow: 0 8px 28px rgba(37,99,235,.38);
+  background: var(--blue-soft);
+  color: var(--blue);
+  box-shadow: 0 8px 28px rgba(37,99,235,.28);
 }
 
 [lang="es"] .scroll-progress {
