@@ -22,13 +22,17 @@
           <span></span><span></span><span></span>
         </button>
         <nav>
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+          <a href="#about" data-en="About" data-es="Sobre mí">About</a>
+          <a href="#education" data-en="Education" data-es="Educación">Education</a>
+          <a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a>
+          <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+          <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+          <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
         </nav>
+        <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language selector">
+          <button class="lang-opt" id="lang-en" aria-pressed="true">English</button>
+          <button class="lang-opt" id="lang-es" aria-pressed="false">Español</button>
+        </div>
       </div>
     </header>
 
@@ -41,53 +45,53 @@
           <span class="blob blob-accent"></span>
         </div>
         <div class="container hero-inner">
-          <p class="eyebrow reveal-up">Computer Science &bull; UPR Río Piedras</p>
+          <p class="eyebrow reveal-up" data-en="Computer Science &bull; UPR Río Piedras" data-es="Ciencias de Cómputos &bull; UPR Río Piedras">Computer Science &bull; UPR Río Piedras</p>
           <h1 class="reveal-up delay-1">
-            Building software that<br />
+            <span data-en="Building software that" data-es="Construyendo software que">Building software that</span><br />
             <span class="typed-wrap">
               <span id="typed-text" class="typed"></span><span class="cursor" aria-hidden="true">|</span>
             </span>
           </h1>
-          <p class="lead reveal-up delay-2">
-            I'm <strong>Jonathan J. Lois Ortiz</strong> — a junior CS student obsessed with clean systems,
+          <p class="lead reveal-up delay-2" data-en="I'm Jonathan J. Lois Ortiz — a junior CS student with a big interest for clean systems, machine learning, and products that actually help people." data-es="Soy Jonathan J. Lois Ortiz — estudiante de tercer año de CS con gran interés en sistemas eficientes, aprendizaje automático y productos que realmente ayudan a las personas.">
+            I'm <strong>Jonathan J. Lois Ortiz</strong> — a junior CS student with a big interest for clean systems,
             machine learning, and products that actually help people.
           </p>
           <div class="hero-actions reveal-up delay-3">
-            <a class="btn btn-primary" href="mailto:jonathan.lois@upr.edu">Get in touch</a>
+            <a class="btn btn-primary" href="mailto:jonathan.lois@upr.edu" data-en="Get in touch" data-es="Contáctame">Get in touch</a>
             <a class="btn btn-ghost" href="https://www.linkedin.com/in/jonathan-josé-l-4282852b7" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="btn btn-ghost" href="#experience">See my work</a>
+            <a class="btn btn-ghost" href="#experience" data-en="See my work" data-es="Ver mi trabajo">See my work</a>
           </div>
           <div class="stat-cards reveal-up delay-4" aria-label="Impact highlights">
             <div class="stat-card">
               <span class="stat-num" data-target="80">0</span><span class="stat-unit">+</span>
-              <p>Students tutored</p>
+              <p data-en="Students tutored" data-es="Estudiantes tutorizados">Students tutored</p>
             </div>
             <div class="stat-card">
               <span class="stat-num" data-target="95">0</span><span class="stat-unit">%</span>
-              <p>Model accuracy</p>
+              <p data-en="Model accuracy" data-es="Precisión del modelo">Model accuracy</p>
             </div>
             <div class="stat-card">
               <span class="stat-num" data-target="40">0</span><span class="stat-unit">%</span>
-              <p>Cloud call reduction</p>
+              <p data-en="Cloud call reduction" data-es="Reducción de llamadas cloud">Cloud call reduction</p>
             </div>
             <div class="stat-card">
               <span class="stat-num" data-target="3">0</span><span class="stat-unit">+</span>
-              <p>Active roles</p>
+              <p data-en="Active roles" data-es="Roles activos">Active roles</p>
             </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="section container">
-        <h2 class="section-title reveal-up">About Me</h2>
+        <h2 class="section-title reveal-up" data-en="About Me" data-es="Sobre Mí">About Me</h2>
         <div class="about-layout">
           <div class="about-text reveal-up">
-            <p>
+            <p data-en="I'm a junior Computer Science student passionate about Machine Learning and Software Engineering. I love tackling problems that blend data, design, and real-world impact — whether that's predicting game outcomes, redesigning a university platform, or optimizing cloud infrastructure." data-es="Soy un estudiante de tercer año de Ciencias de Cómputos apasionado por el Aprendizaje Automático y la Ingeniería de Software. Me encanta resolver problemas que combinan datos, diseño e impacto real — ya sea prediciendo resultados deportivos, rediseñando una plataforma universitaria u optimizando infraestructura en la nube.">
               I'm a junior Computer Science student passionate about <strong>Machine Learning</strong> and
               <strong>Software Engineering</strong>. I love tackling problems that blend data, design, and real-world
               impact — whether that's predicting game outcomes, redesigning a university platform, or optimizing cloud infrastructure.
             </p>
-            <p>
+            <p data-en="I'm currently seeking internships and research opportunities where I can apply my technical skills and keep growing alongside experienced teams." data-es="Actualmente estoy buscando pasantías y oportunidades de investigación donde pueda aplicar mis habilidades técnicas y seguir creciendo junto a equipos con experiencia.">
               I'm currently seeking <strong>internships and research opportunities</strong> where I can apply
               my technical skills and keep growing alongside experienced teams.
             </p>
@@ -96,21 +100,21 @@
             <div class="info-card">
               <span class="info-icon">&#127891;</span>
               <div>
-                <p class="info-label">Education</p>
-                <p class="info-value">B.S. Computer Science, UPR RP</p>
+                <p class="info-label" data-en="Education" data-es="Educación">Education</p>
+                <p class="info-value" data-en="B.S. Computer Science, UPRRP" data-es="B.S. Ciencias de Cómputos, UPRRP">B.S. Computer Science, UPRRP</p>
               </div>
             </div>
             <div class="info-card">
               <span class="info-icon">&#128205;</span>
               <div>
-                <p class="info-label">Location</p>
-                <p class="info-value">San Juan, Puerto Rico</p>
+                <p class="info-label" data-en="Location" data-es="Ubicación">Location</p>
+                <p class="info-value">Canóvanas, Puerto Rico</p>
               </div>
             </div>
             <div class="info-card">
               <span class="info-icon">&#128301;</span>
               <div>
-                <p class="info-label">Focus</p>
+                <p class="info-label" data-en="Focus" data-es="Enfoque">Focus</p>
                 <p class="info-value">ML &bull; Full-Stack &bull; Cloud</p>
               </div>
             </div>
@@ -121,32 +125,26 @@
                 <p class="info-value"><a href="mailto:jonathan.lois@upr.edu">jonathan.lois@upr.edu</a></p>
               </div>
             </div>
-            <div class="info-card">
-              <span class="info-icon">&#128101;</span>
-              <div>
-                <p class="info-label">LinkedIn</p>
-                <p class="info-value"><a href="https://www.linkedin.com/in/jonathan-josé-l-4282852b7" target="_blank" rel="noopener noreferrer">jonathan-josé-l</a></p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
 
       <section id="education" class="section container">
-        <h2 class="section-title reveal-up">Education</h2>
+        <h2 class="section-title reveal-up" data-en="Education" data-es="Educación">Education</h2>
         <div class="edu-card reveal-up">
           <div class="edu-icon">&#127891;</div>
           <div class="edu-body">
-            <h3>B.S. in Computer Science</h3>
-            <p class="meta">University of Puerto Rico, Río Piedras &nbsp;&middot;&nbsp; Aug 2023 – May 2027</p>
-            <p class="edu-minor">Minor: Information Systems &amp; Business Intelligence</p>
+            <h3 data-en="B.S. in Computer Science" data-es="B.S. en Ciencias de Cómputos">B.S. in Computer Science</h3>
+            <p class="meta" data-en="University of Puerto Rico, Río Piedras &nbsp;·&nbsp; Aug 2023 – May 2027" data-es="Universidad de Puerto Rico, Río Piedras &nbsp;·&nbsp; Ago 2023 – May 2027">University of Puerto Rico, Río Piedras &nbsp;&middot;&nbsp; Aug 2023 – May 2027</p>
+            <p class="edu-minor" data-en="Minor: Information Systems &amp; Business Intelligence" data-es="Minor: Sistemas de Información e Inteligencia de Negocios">Minor: Information Systems &amp; Business Intelligence</p>
             <div class="edu-row">
               <div>
-                <p class="edu-label">Major GPA</p>
+                <p class="edu-label" data-en="Major GPA" data-es="GPA en la Especialidad">Major GPA</p>
                 <p class="edu-value">3.7</p>
               </div>
               <div>
-                <p class="edu-label">Organizations</p>
+                <p class="edu-label" data-en="Organizations" data-es="Organizaciones">Organizations</p>
                 <p class="edu-value">AECC</p>
               </div>
             </div>
@@ -165,15 +163,15 @@
       </section>
 
       <section id="experience" class="section container">
-        <h2 class="section-title reveal-up">Experience</h2>
+        <h2 class="section-title reveal-up" data-en="Experience" data-es="Experiencia">Experience</h2>
         <div class="timeline">
 
           <article class="role-card reveal-up">
             <div class="role-header" role="button" tabindex="0" aria-expanded="true">
               <div class="role-dot dot-green"></div>
               <div class="role-header-text">
-                <h3>Project Lead Software Engineer</h3>
-                <p class="meta">Oct 2025 – Present &nbsp;&middot;&nbsp; CRiiAS Título V, UPR</p>
+                <h3 data-en="Project Lead Software Engineer" data-es="Ingeniero de Software Líder de Proyecto">Project Lead Software Engineer</h3>
+                <p class="meta" data-en="Oct 2025 – Present &nbsp;·&nbsp; CRiiAS Título V, UPR" data-es="Oct 2025 – Presente &nbsp;·&nbsp; CRiiAS Título V, UPR">Oct 2025 – Present &nbsp;&middot;&nbsp; CRiiAS Título V, UPR</p>
               </div>
               <div class="role-tags">
                 <span class="tag">React</span>
@@ -186,12 +184,12 @@
             <div class="role-body open">
               <ul>
                 
-                <li>Currently developing a full-stack application using <strong>React + TypeScript</strong> on the frontend and <strong>Django REST Framework + PostgreSQL</strong> on the backend, replacing a legacy static site with a fully dynamic platform.</li>
-                <li>Implemented <strong>Google OAuth 2.0</strong> via Django Allauth, enabling secure single-sign-on for students and staff using their institutional UPR Google accounts — eliminating password management entirely.</li>
-                <li>Built an <strong>in-person attendance tracking system</strong> allowing students to log check-ins in real time, replacing Jotform-based check-ins with a structured digital record linked to each student's profile.</li>
-                <li>Will build an <strong>admin analytics dashboard</strong> surfacing registration trends, session occupancy, and student activity — giving program coordinators real-time data visibility for the first time.</li>
+                <li data-en="Currently developing a full-stack application using React + TypeScript on the frontend and Django REST Framework + PostgreSQL on the backend, replacing a legacy static site with a fully dynamic platform." data-es="Actualmente desarrollando una aplicación full-stack con React + TypeScript en el frontend y Django REST Framework + PostgreSQL en el backend, reemplazando un sitio estático legado con una plataforma completamente dinámica.">Currently developing a full-stack application using <strong>React + TypeScript</strong> on the frontend and <strong>Django REST Framework + PostgreSQL</strong> on the backend, replacing a legacy static site with a fully dynamic platform.</li>
+                <li data-en="Implemented Google OAuth 2.0 via Django Allauth, enabling secure single-sign-on for students and staff using their institutional UPR Google accounts — eliminating password management entirely." data-es="Implementé Google OAuth 2.0 mediante Django Allauth, habilitando inicio de sesión único seguro para estudiantes y personal usando sus cuentas institucionales de Google — eliminando la gestión de contraseñas por completo.">Implemented <strong>Google OAuth 2.0</strong> via Django Allauth, enabling secure single-sign-on for students and staff using their institutional UPR Google accounts — eliminating password management entirely.</li>
+                <li data-en="Built an in-person attendance tracking system allowing students to log check-ins in real time, replacing Jotform-based check-ins with a structured digital record linked to each student's profile." data-es="Construí un sistema de registro de asistencia presencial que permite a los estudiantes registrar entradas en tiempo real, reemplazando los check-ins de Jotform con un registro digital estructurado vinculado al perfil de cada estudiante.">Built an <strong>in-person attendance tracking system</strong> allowing students to log check-ins in real time, replacing Jotform-based check-ins with a structured digital record linked to each student's profile.</li>
+                <li data-en="Will build an admin analytics dashboard surfacing registration trends, session occupancy, and student activity — giving program coordinators real-time data visibility for the first time." data-es="Construiré un panel de análisis administrativo que mostrará tendencias de registro, ocupación de sesiones y actividad estudiantil — dando a los coordinadores visibilidad de datos en tiempo real por primera vez.">Will build an <strong>admin analytics dashboard</strong> surfacing registration trends, session occupancy, and student activity — giving program coordinators real-time data visibility for the first time.</li>
               </ul>
-              <p class="role-disclaimer">
+              <p class="role-disclaimer" data-en="🔗 Live site link will be published once the platform is deployed to production." data-es="🔗 El enlace al sitio en vivo se publicará una vez que la plataforma esté desplegada en producción.">
                 🔗 Live site link will be published once the platform is deployed to production.
               </p>
               <div class="before-after" aria-label="CRiiAS redesign — before and after">
@@ -211,8 +209,8 @@
             <div class="role-header" role="button" tabindex="0" aria-expanded="false">
               <div class="role-dot dot-mocha"></div>
               <div class="role-header-text">
-                <h3>Academic Tutor — CS &amp; Mathematics</h3>
-                <p class="meta">Jan 2025 – Present &nbsp;&middot;&nbsp; CRiiAS Título V, UPR</p>
+                <h3 data-en="Academic Tutor — CS &amp; Mathematics" data-es="Tutor Académico — CS y Matemáticas">Academic Tutor — CS &amp; Mathematics</h3>
+                <p class="meta" data-en="Jan 2025 – Present &nbsp;·&nbsp; CRiiAS Título V, UPR" data-es="Ene 2025 – Presente &nbsp;·&nbsp; CRiiAS Título V, UPR">Jan 2025 – Present &nbsp;&middot;&nbsp; CRiiAS Título V, UPR</p>
               </div>
               <div class="role-tags">
                 <span class="tag">Teaching</span>
@@ -223,10 +221,10 @@
             </div>
             <div class="role-body">
               <ul>
-                <li>Delivered <strong>one-on-one and group tutoring sessions</strong> for courses spanning Data Structures, Calculus I and Discrete Mathematics.</li>
-                <li>Supported over <strong>80 students in a single semester</strong>, consistently receiving high satisfaction ratings from program coordinators and students alike.</li>
-                <li>Developed <strong>original practice problem sets, exam guides, and concept summaries</strong> tailored to common student pain points identified through session feedback.</li>
-                <li>Coordinated with faculty to <strong>align tutoring content with course syllabi</strong>, ensuring students received targeted, exam-relevant support at the right time.</li>
+                <li data-en="Delivered one-on-one and group tutoring sessions for courses spanning Data Structures, Calculus I and Discrete Mathematics." data-es="Impartí sesiones de tutoría individual y grupal para cursos de Estructuras de Datos, Cálculo I y Matemáticas Discretas.">Delivered <strong>one-on-one and group tutoring sessions</strong> for courses spanning Data Structures, Calculus I and Discrete Mathematics.</li>
+                <li data-en="Supported over 80 students in a single semester, consistently receiving high satisfaction ratings from program coordinators and students alike." data-es="Apoyé a más de 80 estudiantes en un solo semestre, recibiendo consistentemente altas calificaciones de satisfacción de coordinadores y estudiantes.">Supported over <strong>80 students in a single semester</strong>, consistently receiving high satisfaction ratings from program coordinators and students alike.</li>
+                <li data-en="Developed original practice problem sets, exam guides, and concept summaries tailored to common student pain points identified through session feedback." data-es="Desarrollé conjuntos de problemas, guías de exámenes y resúmenes conceptuales originales adaptados a las dificultades comunes de los estudiantes identificadas a través de retroalimentación.">Developed <strong>original practice problem sets, exam guides, and concept summaries</strong> tailored to common student pain points identified through session feedback.</li>
+                <li data-en="Coordinated with faculty to align tutoring content with course syllabi, ensuring students received targeted, exam-relevant support at the right time." data-es="Coordiné con el profesorado para alinear el contenido de tutoría con los programas de los cursos, asegurando que los estudiantes recibieran apoyo específico y relevante para los exámenes.">Coordinated with faculty to <strong>align tutoring content with course syllabi</strong>, ensuring students received targeted, exam-relevant support at the right time.</li>
               </ul>
             </div>
           </article>
@@ -235,8 +233,8 @@
             <div class="role-header" role="button" tabindex="0" aria-expanded="false">
               <div class="role-dot dot-green"></div>
               <div class="role-header-text">
-                <h3>Software Engineer Intern</h3>
-                <p class="meta">Jun 2025 – Aug 2025 &nbsp;&middot;&nbsp; Roadeo, San Juan</p>
+                <h3 data-en="Software Engineer Intern" data-es="Pasante de Ingeniería de Software">Software Engineer Intern</h3>
+                <p class="meta" data-en="Jun 2025 – Aug 2025 &nbsp;·&nbsp; Roadeo, San Juan" data-es="Jun 2025 – Ago 2025 &nbsp;·&nbsp; Roadeo, San Juan">Jun 2025 – Aug 2025 &nbsp;&middot;&nbsp; Roadeo, San Juan</p>
               </div>
               <div class="role-tags">
                 <span class="tag">Flutter</span>
@@ -247,10 +245,10 @@
             </div>
             <div class="role-body">
               <ul>
-                <li>Contributed to a <strong>production Flutter mobile app</strong> used by active customers, implementing UI features, fixing bugs, and shipping code through a structured review and QA pipeline.</li>
-                <li>Integrated <strong>third-party messaging APIs and internal REST endpoints</strong> to build real-time communication workflows between drivers and dispatchers within the app.</li>
-                <li>Identified a critical inefficiency in cloud function invocation patterns and <strong>reduced daily Google Cloud function calls by 40%</strong> through caching strategies and request batching — directly lowering infrastructure costs.</li>
-                <li>Worked with <strong>Firebase Firestore and Firebase Auth</strong> to manage real-time data sync and user session state across the mobile client.</li>
+                <li data-en="Contributed to a production Flutter mobile app used by active customers, implementing UI features, fixing bugs, and shipping code through a structured review and QA pipeline." data-es="Contribuí a una aplicación móvil Flutter en producción usada por clientes activos, implementando funciones de UI, corrigiendo errores y entregando código a través de un proceso estructurado de revisión y QA.">Contributed to a <strong>production Flutter mobile app</strong> used by active customers, implementing UI features, fixing bugs, and shipping code through a structured review and QA pipeline.</li>
+                <li data-en="Integrated third-party messaging APIs and internal REST endpoints to build real-time communication workflows between drivers and dispatchers within the app." data-es="Integré APIs de mensajería de terceros y endpoints REST internos para construir flujos de comunicación en tiempo real entre conductores y despachadores dentro de la app.">Integrated <strong>third-party messaging APIs and internal REST endpoints</strong> to build real-time communication workflows between drivers and dispatchers within the app.</li>
+                <li data-en="Identified a critical inefficiency in cloud function invocation patterns and reduced daily Google Cloud function calls by 40% through caching strategies and request batching — directly lowering infrastructure costs." data-es="Identifiqué una ineficiencia crítica en los patrones de invocación de funciones cloud y reduje las llamadas diarias a Google Cloud en un 40% mediante estrategias de caché y agrupación de solicitudes — reduciendo directamente los costos de infraestructura.">Identified a critical inefficiency in cloud function invocation patterns and <strong>reduced daily Google Cloud function calls by 40%</strong> through caching strategies and request batching — directly lowering infrastructure costs.</li>
+                <li data-en="Worked with Firebase Firestore and Firebase Auth to manage real-time data sync and user session state across the mobile client." data-es="Trabajé con Firebase Firestore y Firebase Auth para gestionar la sincronización de datos en tiempo real y el estado de sesión del usuario en el cliente móvil.">Worked with <strong>Firebase Firestore and Firebase Auth</strong> to manage real-time data sync and user session state across the mobile client.</li>
               </ul>
             </div>
           </article>
@@ -259,8 +257,8 @@
             <div class="role-header" role="button" tabindex="0" aria-expanded="false">
               <div class="role-dot dot-mocha"></div>
               <div class="role-header-text">
-                <h3>Research Assistant — Atmospheric &amp; Aerosol Lab</h3>
-                <p class="meta">Mar 2025 – Jun 2025 &nbsp;&middot;&nbsp; ACAR Lab, UPR</p>
+                <h3 data-en="Research Assistant — Atmospheric &amp; Aerosol Lab" data-es="Asistente de Investigación — Lab. Atmosférico y de Aerosoles">Research Assistant — Atmospheric &amp; Aerosol Lab</h3>
+                <p class="meta" data-en="Mar 2025 – Jun 2025 &nbsp;·&nbsp; ACAR Lab, UPR" data-es="Mar 2025 – Jun 2025 &nbsp;·&nbsp; ACAR Lab, UPR">Mar 2025 – Jun 2025 &nbsp;&middot;&nbsp; ACAR Lab, UPR</p>
               </div>
               <div class="role-tags">
                 <span class="tag">Python</span>
@@ -271,9 +269,9 @@
             </div>
             <div class="role-body">
               <ul>
-                <li>Processed and analyzed large-scale <strong>Aerosol Optical Depth (AOD) and PM10 particulate datasets</strong> sourced from remote sensing instruments and ground-level monitoring stations across Puerto Rico.</li>
-                <li>Used <strong>Pandas and NumPy</strong> to clean, merge, and transform raw sensor data into structured formats suitable for statistical analysis and publication-ready figures.</li>
-                <li>Wrote <strong>automated Python scripts</strong> to scrape external data sources, perform format conversions (NetCDF, CSV, Excel), and organize output files for reproducible research pipelines.</li>
+                <li data-en="Processed and analyzed large-scale Aerosol Optical Depth (AOD) and PM10 particulate datasets sourced from remote sensing instruments and ground-level monitoring stations across Puerto Rico." data-es="Procesé y analicé conjuntos de datos a gran escala de Profundidad Óptica de Aerosoles (AOD) y partículas PM10 provenientes de instrumentos de teledetección y estaciones de monitoreo en Puerto Rico.">Processed and analyzed large-scale <strong>Aerosol Optical Depth (AOD) and PM10 particulate datasets</strong> sourced from remote sensing instruments and ground-level monitoring stations across Puerto Rico.</li>
+                <li data-en="Used Pandas and NumPy to clean, merge, and transform raw sensor data into structured formats suitable for statistical analysis and publication-ready figures." data-es="Usé Pandas y NumPy para limpiar, fusionar y transformar datos brutos de sensores en formatos estructurados adecuados para análisis estadístico y figuras listas para publicación.">Used <strong>Pandas and NumPy</strong> to clean, merge, and transform raw sensor data into structured formats suitable for statistical analysis and publication-ready figures.</li>
+                <li data-en="Wrote automated Python scripts to scrape external data sources, perform format conversions (NetCDF, CSV, Excel), and organize output files for reproducible research pipelines." data-es="Escribí scripts automatizados en Python para extraer datos de fuentes externas, realizar conversiones de formato (NetCDF, CSV, Excel) y organizar archivos de salida para pipelines de investigación reproducibles.">Wrote <strong>automated Python scripts</strong> to scrape external data sources, perform format conversions (NetCDF, CSV, Excel), and organize output files for reproducible research pipelines.</li>
               </ul>
             </div>
           </article>
@@ -282,14 +280,14 @@
       </section>
 
       <section id="projects" class="section container">
-        <h2 class="section-title reveal-up">Projects</h2>
+        <h2 class="section-title reveal-up" data-en="Projects" data-es="Proyectos">Projects</h2>
         <div class="projects-grid">
 
           <article class="project-card reveal-up">
             <div class="project-accent accent-green"></div>
             <div class="project-body">
-              <h3>NBA Win % Prediction Model</h3>
-              <p>
+              <h3 data-en="NBA Win % Prediction Model" data-es="Modelo de Predicción de Victorias NBA">NBA Win % Prediction Model</h3>
+              <p data-en="A Random Forest regression model trained on per-team season stats to predict win percentage with high statistical confidence." data-es="Un modelo de regresión Random Forest entrenado con estadísticas de temporada por equipo para predecir el porcentaje de victorias con alta confianza estadística.">
                 A Random Forest regression model trained on per-team season stats to predict win percentage
                 with high statistical confidence.
               </p>
@@ -308,8 +306,8 @@
           <article class="project-card reveal-up delay-1">
             <div class="project-accent accent-mocha"></div>
             <div class="project-body">
-              <h3>Cloud Multiplayer Server</h3>
-              <p>
+              <h3 data-en="Cloud Multiplayer Server" data-es="Servidor Multijugador en la Nube">Cloud Multiplayer Server</h3>
+              <p data-en="Deployed and self-managed a Java game server on Oracle Cloud Infrastructure — including VCN setup, security policy hardening, and upgrades." data-es="Desplegué y administré de forma independiente un servidor de juegos Java en Oracle Cloud Infrastructure — incluyendo configuración de VCN, refuerzo de políticas de seguridad y actualizaciones.">
                 Deployed and self-managed a Java game server on Oracle Cloud Infrastructure — including
                 VCN setup, security policy hardening, and upgrades.
               </p>
@@ -329,10 +327,10 @@
       </section>
 
       <section id="skills" class="section container">
-        <h2 class="section-title reveal-up">Skills</h2>
+        <h2 class="section-title reveal-up" data-en="Skills" data-es="Habilidades">Skills</h2>
         <div class="skills-grid">
           <div class="skill-group reveal-up">
-            <h3 class="skill-group-title">Languages</h3>
+            <h3 class="skill-group-title" data-en="Languages" data-es="Lenguajes">Languages</h3>
             <div class="tag-cloud">
               <span class="tag tag-lg">Python</span>
               <span class="tag tag-lg">Java</span>
@@ -344,7 +342,7 @@
             </div>
           </div>
           <div class="skill-group reveal-up delay-1">
-            <h3 class="skill-group-title">Frameworks &amp; Tools</h3>
+            <h3 class="skill-group-title" data-en="Frameworks &amp; Tools" data-es="Frameworks y Herramientas">Frameworks &amp; Tools</h3>
             <div class="tag-cloud">
               <span class="tag tag-lg">React</span>
               <span class="tag tag-lg">Django</span>
@@ -356,7 +354,7 @@
             </div>
           </div>
           <div class="skill-group reveal-up delay-2">
-            <h3 class="skill-group-title">Machine Learning</h3>
+            <h3 class="skill-group-title" data-en="Machine Learning" data-es="Aprendizaje Automático">Machine Learning</h3>
             <div class="tag-cloud">
               <span class="tag tag-lg">Scikit-learn</span>
               <span class="tag tag-lg">Pandas</span>
@@ -367,7 +365,7 @@
             </div>
           </div>
           <div class="skill-group reveal-up delay-3">
-            <h3 class="skill-group-title">Cloud &amp; Infrastructure</h3>
+            <h3 class="skill-group-title" data-en="Cloud &amp; Infrastructure" data-es="Nube e Infraestructura">Cloud &amp; Infrastructure</h3>
             <div class="tag-cloud">
               <span class="tag tag-lg">Google Cloud</span>
               <span class="tag tag-lg">Oracle Cloud</span>
@@ -381,9 +379,9 @@
 
       <section id="contact" class="section container">
         <div class="contact-box reveal-up">
-          <p class="contact-eyebrow">Let's work together</p>
-          <h2>Open to new opportunities</h2>
-          <p class="contact-sub">
+          <p class="contact-eyebrow" data-en="Let's work together" data-es="Trabajemos juntos">Let's work together</p>
+          <h2 data-en="Open to new opportunities" data-es="Abierto a nuevas oportunidades">Open to new opportunities</h2>
+          <p class="contact-sub" data-en="I'm looking for internships, software engineering roles, and ML research collaborations. Don't hesitate to reach out." data-es="Estoy buscando pasantías, roles de ingeniería de software y colaboraciones de investigación en ML. No dudes en contactarme.">
             I'm looking for internships, software engineering roles, and ML research collaborations.
             Don't hesitate to reach out.
           </p>
@@ -399,7 +397,7 @@
     <footer class="footer">
       <div class="container footer-inner">
         <p>&#169; <span id="year"></span> Jonathan J. Lois Ortiz</p>
-        <p class="footer-sub">Built with HTML, CSS &amp; JavaScript</p>
+        <p class="footer-sub" data-en="Built with HTML, CSS &amp; JavaScript" data-es="Construido con HTML, CSS y JavaScript">Built with HTML, CSS &amp; JavaScript</p>
       </div>
     </footer>
 

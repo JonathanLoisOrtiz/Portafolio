@@ -26,6 +26,37 @@ if (navToggle && navMenu) {
   });
 }
 
+/* ---------- EN / ES language toggle ---------- */
+const langEnBtn = document.getElementById('lang-en');
+const langEsBtn = document.getElementById('lang-es');
+const html      = document.documentElement;
+const typeWords = {
+  en: ['matters.', 'scales.', 'makes an impact.', 'lasts.'],
+  es: ['importa.', 'escala.', 'genera impacto.', 'perdura.']
+};
+let currentLang = 'en';
+
+function applyLang(lang) {
+  html.lang = lang;
+  langEnBtn.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+  langEsBtn.setAttribute('aria-pressed', lang === 'es' ? 'true' : 'false');
+  // swap all data-en / data-es text nodes
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.innerHTML = el.dataset[lang];
+  });
+  // update typewriter word list
+  words.length = 0;
+  typeWords[lang].forEach(w => words.push(w));
+  // reset typewriter
+  wordIndex = 0; charIndex = 0; deleting = false;
+  if (typedEl) { typedEl.textContent = ''; }
+  clearTimeout(typeTimer);
+  typeTimer = setTimeout(type, 400);
+}
+
+if (langEnBtn) langEnBtn.addEventListener('click', () => { currentLang = 'en'; applyLang('en'); });
+if (langEsBtn) langEsBtn.addEventListener('click', () => { currentLang = 'es'; applyLang('es'); });
+
 /* ---------- Scroll progress bar ---------- */
 const bar = document.getElementById('scroll-progress');
 function updateProgress() {
@@ -77,7 +108,7 @@ if (statCards) counterObserver.observe(statCards);
 /* ---------- Typewriter effect ---------- */
 const words = ['matters.', 'scales.', 'makes an impact.', 'lasts.'];
 const typedEl = document.getElementById('typed-text');
-let wordIndex = 0, charIndex = 0, deleting = false;
+let wordIndex = 0, charIndex = 0, deleting = false, typeTimer;
 
 function type() {
   if (!typedEl) return;
@@ -86,23 +117,23 @@ function type() {
     typedEl.textContent = word.slice(0, ++charIndex);
     if (charIndex === word.length) {
       deleting = true;
-      setTimeout(type, 1800);
+      typeTimer = setTimeout(type, 1800);
       return;
     }
-    setTimeout(type, 75);
+    typeTimer = setTimeout(type, 75);
   } else {
     typedEl.textContent = word.slice(0, --charIndex);
     if (charIndex === 0) {
       deleting = false;
       wordIndex = (wordIndex + 1) % words.length;
-      setTimeout(type, 350);
+      typeTimer = setTimeout(type, 350);
       return;
     }
-    setTimeout(type, 45);
+    typeTimer = setTimeout(type, 45);
   }
 }
 
-setTimeout(type, 900);
+typeTimer = setTimeout(type, 900);
 
 /* ---------- Role card accordion ---------- */
 document.querySelectorAll('.role-header').forEach(header => {
